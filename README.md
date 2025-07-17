@@ -286,7 +286,7 @@ model = TFT(
     futr_exog_list=futuristic_features
 ```
 
-PATCHTST
+### PATCHTST
 
 PatchTst TFT-ის მსგავსია, თუმცა მთლიანად Transformer Based არის და Patch-ებად ყოფს ინფუთს ინდივიდუალური პროცესინგის ნაცვლად.
 
@@ -305,3 +305,15 @@ hyperparam tuning
 * გავზარდე patch-ის ზომა 24-მდე და embedding dimension 96-მდე, რომ დაეჭირა უფრო მეტი პატერნი და უფრო კომპლექსური feature-ების ერთმანეთთან "ურთიერთობა". 
 
 WMAE: 1685
+
+
+
+### MLFLOW LOGGING
+ყველა ექსპერიმენტი დალოგილია MLflow-ზე:
+
+https://dagshub.com/abarb22/Walmart-Recruiting---Store-Sales-Forecasting.mlflow/#/experiments/2?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D
+
+- ვალიდაციის ქულები (MAE, WMAE)
+- დამატებული feature-ები
+- მოდელი
+  
