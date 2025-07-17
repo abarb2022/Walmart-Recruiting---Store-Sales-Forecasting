@@ -294,13 +294,13 @@ PatchTst TFT-ის მსგავსია, თუმცა მთლიან
 | **input_size** | 52 | time step-ების რაოდენობა  |
 | **patch_len** | 16/24 | patch-ების სიგრძე |
 | **stride** | 8 | patch-ების შორის overlap (პატარა stride = დიდი overlap)|
-| **d_model** | 64/96 | Embedding dimension - ვექტორის წარმოდგენის ზომა ყოველი patch-ისთვის transformer-ში |
+| **d_model** | 64/96 | Embedding dimension - ვექტორის წარმოდგენის ზომა ყოველი patch-ისთვის transformer-ში, უფრო დიდი ზომის Embedding dimension უფრო კომპლექსურ პატერნებს დაიჭერს|
 | **h** | 39 | Forecast horizon - მომავალი time step-ების რაოდენობა დასაფრედიქთებლად |
 
 
 hyperparam tuning
 
 * გამოვიყენე input_size=52, patch_len=16, stride=8, და embedding dimension d_model=64. 
-* გავზარდე patch-ის ზომა 24-მდე და embedding dimension 96-მდე, რომ დაეჭირა უფრო მეტი პატერნი და უფრო კომპლექსური feature-ების ერთმანეთთან დამოკიდებულება. 
+* გავზარდე patch-ის ზომა 24-მდე და embedding dimension 96-მდე, რომ დაეჭირა უფრო მეტი პატერნი და უფრო კომპლექსური feature-ების ერთმანეთთან "ურთიერთობა". 
 
 WMAE: 1685
